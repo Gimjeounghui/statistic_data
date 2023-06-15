@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kunintns.statisticData.intersectionInfo.service.IntersectionInfoMapper">
+
+	<select id="selectIntersectList" resultType="intersectionInfoVO" parameterType="intersectionInfoVO">
+	
+		SELECT  
+		        INTRSCTN_NO
+              , INTRSCTN_ID 
+              , START_LATITUDE 
+              , END_LATITUDE
+              , START_LONGITUDE
+              , END_LONGITUDE
+		
+		FROM INTERSECTION_INFO
+			
+	</select>
+
+</mapper>
